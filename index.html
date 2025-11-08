@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Matasaa - Pre-book your reliable ride with professional drivers across South Africa. Transparent pricing from R32.">
+    <title>Matasaa - Reliable Pre-Reserved Transportation</title>
+    <link rel="icon" type="image/png" href="https://matasaa.co.za/wp-content/uploads/2025/03/cropped-favicon-32x32.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header" id="home">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="#home">
+                        <img src="uploads/2025/03/logo.png" alt="Matasaa" style="height: 50px;">
+                    </a>
+                </div>
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#book-ride">Book A Ride</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#rates">Rates</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="header-contact">
+                    <a href="https://wa.me/+27699362645" class="whatsapp-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                        <span>069 936 2645</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="container">
+                        <h1 class="hero-title">Pre-book your reliable ride with Matasaa</h1>
+                        <a href="#book-ride" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="uploads/2025/04/service-1.png" alt="Professional taxi service">
+                </div>
+                <div class="about-content">
+                    <p class="section-subtitle">We're the best in your town</p>
+                    <h2 class="section-title">Welcome to the most trusted company</h2>
+                    <p class="about-text">At Matasaa, we provide reliable pre-reserved transportation services designed with your comfort and convenience in mind. Our professional drivers and quality vehicles ensure you arrive at your destination safely and on time, every time.</p>
+                    <div class="about-features">
+                        <span class="feature-badge">Safe</span>
+                        <span class="feature-badge">Fast</span>
+                        <span class="feature-badge">Quick</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking-section" id="book-ride">
+        <div class="container">
+            <div class="booking-wrapper">
+                <div class="booking-header">
+                    <p class="section-subtitle">Need a ride?</p>
+                    <h2 class="section-title">Book your ride with Matasaa</h2>
+                </div>
+                <form id="bookingForm" class="booking-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="fullName" required placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required placeholder="Email address">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="tel" id="phone" required placeholder="Phone number">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="passengers" min="1" max="6" value="1" placeholder="Number of passengers">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="pickupAddress" required placeholder="Pick up address">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="dropoffAddress" required placeholder="Drop off address">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="date" id="pickupDate" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="pickupTime" required>
+                                <option value="">Select Time</option>
+                                <option value="00:00">00:00</option>
+                                <option value="01:00">01:00</option>
+                                <option value="02:00">02:00</option>
+                                <option value="03:00">03:00</option>
+                                <option value="04:00">04:00</option>
+                                <option value="05:00">05:00</option>
+                                <option value="06:00">06:00</option>
+                                <option value="07:00">07:00</option>
+                                <option value="08:00">08:00</option>
+                                <option value="09:00">09:00</option>
+                                <option value="10:00">10:00</option>
+                                <option value="11:00">11:00</option>
+                                <option value="12:00">12:00</option>
+                                <option value="13:00">13:00</option>
+                                <option value="14:00">14:00</option>
+                                <option value="15:00">15:00</option>
+                                <option value="16:00">16:00</option>
+                                <option value="17:00">17:00</option>
+                                <option value="18:00">18:00</option>
+                                <option value="19:00">19:00</option>
+                                <option value="20:00">20:00</option>
+                                <option value="21:00">21:00</option>
+                                <option value="22:00">22:00</option>
+                                <option value="23:00">23:00</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <select id="vehicleType" required>
+                            <option value="">Select Vehicle Type</option>
+                            <option value="standard">Standard (1-3 passengers)</option>
+                            <option value="xl">Extra Large (4-6 passengers)</option>
+                        </select>
+                    </div>
+                    <div class="price-display" id="priceDisplay" style="display: none;">
+                        <p>Estimated Price: <strong id="estimatedPrice">R0.00</strong></p>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block" id="bookingSubmitBtn">
+                        Calculate Price & Book Now
+                    </button>
+                    <div class="booking-note">
+                        <p>Minimum fare R32 for trips within 5km. Cash and electronic payments accepted.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rates Section -->
+    <section class="rates-section" id="rates">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Our taxi rates</p>
+                <h2 class="section-title">Check taxi fares</h2>
+            </div>
+            <div class="rates-grid">
+                <div class="rate-card">
+                    <div class="rate-header">
+                        <div class="rate-icon">💰</div>
+                        <h3>Standard fares</h3>
+                        <p>Our transparent pricing ensures you know exactly what to expect.</p>
+                    </div>
+                    <ul class="rate-list">
+                        <li><span>Base rate:</span><strong>R6.48 per kilometer</strong></li>
+                        <li><span>Minimum fare (within 5km):</span><strong>R32.00</strong></li>
+                        <li><span>Last-minute booking (within 2hrs):</span><strong>Base rate × 1.15</strong></li>
+                        <li><span>High demand areas:</span><strong>Base rate × 1.3</strong></li>
+                    </ul>
+                </div>
+                <div class="rate-card">
+                    <div class="rate-header">
+                        <div class="rate-icon">⚡</div>
+                        <h3>Priority options</h3>
+                        <p>Choose your priority level for faster driver matching:</p>
+                    </div>
+                    <ul class="rate-list">
+                        <li><span>Standard priority:</span><strong>Base rate</strong></li>
+                        <li><span>Priority level 1:</span><strong>Base rate × 1.15</strong></li>
+                        <li><span>Priority level 2:</span><strong>Base rate × 1.3</strong></li>
+                        <li><span>Priority level 3:</span><strong>Base rate × 1.45</strong></li>
+                        <li><span>Priority level 4:</span><strong>Base rate × 1.6</strong></li>
+                        <li><span>Priority level 5:</span><strong>Base rate × 1.75</strong></li>
+                        <li><span>Maximum priority:</span><strong>Base rate × 2.0</strong></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="rates-note">Minimum fare R32 for trips within 5km. Cash and electronic payments accepted.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-subtitle">Check out our benefits</p>
+                <h2 class="section-title">What we're offering</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="uploads/2025/04/service-1.png" alt="Pre-reserved Rides">
+                    </div>
+                    <h3>Pre-reserved Rides</h3>
+                    <p>Schedule your ride in advance for guaranteed service when you need it most. Perfect for airport transfers, appointments, and important meetings.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="uploads/2025/04/service-2.png" alt="Home Pickups">
+                    </div>
+                    <h3>Home Pickups</h3>
+                    <p>Enjoy door-to-door service with our convenient home pickup option. Our driver will be at your doorstep right when you need them.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="uploads/2025/04/service-3.png" alt="Long Distance Travel">
+                    </div>
+                    <h3>Long Distance Travel</h3>
+                    <p>Enjoy the benefits of booking your preferred driver directly. Our drivers provide personalized service tailored to your needs and preferences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <p class="cta-subtitle">Make a call or fill form</p>
+                    <h3 class="cta-title">Book your ride with Matasaa today.</h3>
+                </div>
+                <a href="#book-ride" class="btn btn-secondary">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact</h3>
+                    <p>Cape Town</p>
+                    <ul class="contact-list">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                            <span>info@matasaa.co.za</span>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                            <span>069 936 2645</span>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                            <span>073 703 8007</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>© Copyright 2025 <a href="https://matasaa.co.za">MATASAA</a></p>
+                <p>Powered by: BYMAGAYE HOLDINGS (PTY) Ltd</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="loading-overlay" style="display: none;">
+        <div class="loader"></div>
+        <p>Processing your booking...</p>
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

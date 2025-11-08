@@ -1,0 +1,32 @@
+# Logs
+*.log
+npm-debug.log*
+acm_monitor.log
+
+# Temporary files
+*.tmp
+*.temp
+.DS_Store
+
+# Build artifacts
+dist/
+build/
+
+# Environment variables
+.env
+.env.local
+
+# AWS credentials
+.aws-credentials
+
+# Editor directories
+.vscode/
+.idea/
+
+# Backup files
+*.bak
+*.backup
+
+# Node modules (if any)
+node_modules/
+*.tar.gz
