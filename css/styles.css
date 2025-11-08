@@ -502,44 +502,365 @@ section {
 }
 
 /* Responsive Design */
+
+/* Large Tablets and Small Desktops */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .about-grid {
+        gap: 40px;
+    }
+
+    .rates-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tablets */
 @media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    /* Navigation */
+    .navbar .container {
+        padding: 12px 20px;
+    }
+
     .nav-menu {
         position: fixed;
-        top: 70px;
+        top: 66px;
         left: -100%;
         flex-direction: column;
         background: var(--white);
         width: 80%;
-        height: calc(100vh - 70px);
-        padding: 40px 20px;
-        box-shadow: 2px 0 10px rgba(0,0,0,0.1);
-        transition: var(--transition);
+        max-width: 300px;
+        height: calc(100vh - 66px);
+        padding: 40px 30px;
+        box-shadow: 2px 0 15px rgba(0,0,0,0.1);
+        transition: left 0.3s ease;
+        overflow-y: auto;
+        z-index: 999;
     }
-    
+
     .nav-menu.active {
         left: 0;
     }
-    
+
+    .nav-menu li {
+        margin: 10px 0;
+    }
+
+    .nav-menu a {
+        font-size: 1.1rem;
+        display: block;
+        padding: 10px 0;
+    }
+
     .nav-toggle {
         display: flex;
+        z-index: 1001;
     }
-    
+
+    .nav-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(8px, 8px);
+    }
+
+    .nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+
+    .header-contact .whatsapp-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .whatsapp-btn span {
+        display: none;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        min-height: 500px;
+        margin-top: 66px;
+    }
+
     .hero-title {
         font-size: 2rem;
+        padding: 0 20px;
     }
-    
-    .about-grid,
+
+    .btn {
+        padding: 12px 30px;
+        font-size: 15px;
+    }
+
+    /* Sections */
+    section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.9rem;
+    }
+
+    /* About Section */
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .about-image {
+        order: -1;
+    }
+
+    .about-text {
+        font-size: 1rem;
+    }
+
+    .about-features {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .feature-badge {
+        padding: 8px 20px;
+        font-size: 1rem;
+    }
+
+    /* Booking Form */
+    .booking-form {
+        padding: 30px 20px;
+    }
+
     .form-row {
         grid-template-columns: 1fr;
+        gap: 15px;
+        margin-bottom: 15px;
     }
-    
+
+    .form-group input,
+    .form-group select {
+        padding: 12px 15px;
+        font-size: 15px;
+    }
+
+    /* Rates Section */
+    .rates-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .rate-card {
+        padding: 30px 20px;
+    }
+
+    .rate-list li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    /* Services Section */
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .service-icon img {
+        height: 200px;
+    }
+
+    /* CTA Section */
     .cta-content {
         flex-direction: column;
-        gap: 30px;
+        gap: 25px;
         text-align: center;
     }
-    
+
+    .cta-title {
+        font-size: 1.5rem;
+    }
+
+    /* Contact */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        min-height: 400px;
+    }
+
+    .hero-title {
+        font-size: 1.6rem;
+        line-height: 1.3;
+    }
+
+    .btn {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+
+    /* Sections */
+    section {
+        padding: 40px 0;
+    }
+
     .section-title {
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .section-header {
+        margin-bottom: 40px;
+    }
+
+    /* About */
+    .about-text {
+        font-size: 0.95rem;
+        margin-bottom: 20px;
+    }
+
+    .feature-badge {
+        padding: 6px 15px;
+        font-size: 0.9rem;
+    }
+
+    /* Booking Form */
+    .booking-header {
+        margin-bottom: 20px;
+    }
+
+    .booking-form {
+        padding: 25px 15px;
+    }
+
+    .price-display {
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+    .price-display strong {
+        font-size: 1.5rem;
+    }
+
+    /* Rates */
+    .rate-card {
+        padding: 25px 15px;
+    }
+
+    .rate-header h3 {
+        font-size: 1.3rem;
+    }
+
+    .rate-icon {
+        font-size: 2.5rem;
+    }
+
+    .rate-list li {
+        font-size: 0.9rem;
+        padding: 10px 0;
+    }
+
+    /* Services */
+    .service-card {
+        padding: 20px 10px;
+    }
+
+    .service-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .service-card p {
+        font-size: 0.95rem;
+    }
+
+    .service-icon img {
+        height: 180px;
+    }
+
+    /* CTA */
+    .cta-section {
+        padding: 40px 0;
+    }
+
+    .cta-title {
+        font-size: 1.3rem;
+    }
+
+    .cta-subtitle {
+        font-size: 0.9rem;
+    }
+
+    /* Contact */
+    .contact-list li {
+        font-size: 0.95rem;
+    }
+
+    /* Footer */
+    .site-footer {
+        padding: 25px 0;
+        font-size: 0.9rem;
+    }
+
+    /* Notification */
+    .notification {
+        right: 10px;
+        left: 10px;
+        max-width: none;
+        padding: 15px 20px;
+    }
+}
+
+/* Small Mobile Phones */
+@media (max-width: 375px) {
+    .hero-title {
+        font-size: 1.4rem;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+    }
+
+    .nav-menu {
+        width: 85%;
+    }
+
+    .booking-form {
+        padding: 20px 12px;
+    }
+
+    .rate-card,
+    .service-card {
+        padding: 20px 12px;
     }
 }
