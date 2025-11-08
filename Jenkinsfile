@@ -29,28 +29,32 @@ pipeline {
         
         stage('Deploy to S3') {
             steps {
-                echo "Deploying to S3 bucket: ${S3_BUCKET}"
-                sh """
-                    aws s3 sync . s3://${S3_BUCKET}/ \
-                        --region ${AWS_REGION} \
-                        --exclude ".git/*" \
-                        --exclude "*.md" \
-                        --exclude "Jenkinsfile" \
-                        --exclude "*.log" \
-                        --exclude ".gitignore" \
-                        --exclude "monitor_and_deploy.sh"
-                """
+                withCredentials([usernamePassword(credentialsId: 'aws-deployment-user', usernameVariable: 'AWS_ACCESS_KEY_ID', passwordVariable: 'AWS_SECRET_ACCESS_KEY')]) {
+                    echo "Deploying to S3 bucket: ${S3_BUCKET}"
+                    sh """
+                        aws s3 sync . s3://${S3_BUCKET}/ \
+                            --region ${AWS_REGION} \
+                            --exclude ".git/*" \
+                            --exclude "*.md" \
+                            --exclude "Jenkinsfile" \
+                            --exclude "*.log" \
+                            --exclude ".gitignore" \
+                            --exclude "monitor_and_deploy.sh"
+                    """
+                }
             }
         }
-        
+
         stage('Invalidate CloudFront') {
             steps {
-                echo "Invalidating CloudFront distribution: ${CLOUDFRONT_ID}"
-                sh """
-                    aws cloudfront create-invalidation \
-                        --distribution-id ${CLOUDFRONT_ID} \
-                        --paths '/*'
-                """
+                withCredentials([usernamePassword(credentialsId: 'aws-deployment-user', usernameVariable: 'AWS_ACCESS_KEY_ID', passwordVariable: 'AWS_SECRET_ACCESS_KEY')]) {
+                    echo "Invalidating CloudFront distribution: ${CLOUDFRONT_ID}"
+                    sh """
+                        aws cloudfront create-invalidation \
+                            --distribution-id ${CLOUDFRONT_ID} \
+                            --paths '/*'
+                    """
+                }
             }
         }
     }
