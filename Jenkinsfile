@@ -15,7 +15,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: "${params.BRANCH}", url: 'git@github.com:NkululekoMbhele/matasaa.co.za.git'
+                git branch: "${params.BRANCH}", url: 'https://github.com/NkululekoMbhele/matasaa.co.za.git'
             }
         }
         
